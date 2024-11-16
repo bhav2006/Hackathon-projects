@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add Form Styles */
+  .add-form {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Filter Styles */
+  .filter {
+    margin-bottom: 2rem;
+  }
+  
+  /* Anime List Styles */
+  .anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .anime-card {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .anime-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .anime-card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .anime-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .anime-card .actions {
+    margin-top: 1rem;
+  }
+  
+  .anime-card .actions button {
+    background-color: #f44336;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .anime-card .actions button.edit {
+    background-color: #ffa500;
+  }
+  
+  .anime-card .actions button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .anime-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .anime-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
