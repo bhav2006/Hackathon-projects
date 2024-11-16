@@ -1,66 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime Watchlist Tracker</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime Favorites</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Anime Watchlist Tracker</h1>
-  </header>
 
-  <section class="container">
-    <!-- Add New Anime Form -->
-    <div class="add-form">
-      <h2>Add Anime</h2>
-      <form id="anime-form">
-        <label for="title">Title:</label>
-        <input type="text" id="title" required>
+    <div class="container">
 
-        <label for="description">Description:</label>
-        <textarea id="description" required></textarea>
+        <h1>Anime Favorites</h1>
+        <p>Select your favorite anime below</p>
 
-        <label for="rating">Rating:</label>
-        <input type="number" id="rating" min="1" max="10" required>
+        <div id="animeList" class="anime-list">
+        </div>
 
-        <label for="genre">Genre:</label>
-        <select id="genre" multiple required>
-          <option value="Action">Action</option>
-          <option value="Adventure">Adventure</option>
-          <option value="Romance">Romance</option>
-          <option value="Fantasy">Fantasy</option>
-          <option value="Sci-Fi">Sci-Fi</option>
-        </select>
+        <div class="actions">
+            <button onclick="window.location.href='favorites.html'">View Favorite Anime Images</button>
+        </div>
 
-        <label for="image">Image URL:</label>
-        <input type="url" id="image" required>
-
-        <button type="submit">Add Anime</button>
-      </form>
     </div>
 
-    <!-- Genre Filter -->
-    <div class="filter">
-      <h2>Filter by Genre</h2>
-      <select id="filter-genre">
-        <option value="">All Genres</option>
-        <option value="Action">Action</option>
-        <option value="Adventure">Adventure</option>
-        <option value="Romance">Romance</option>
-        <option value="Fantasy">Fantasy</option>
-        <option value="Sci-Fi">Sci-Fi</option>
-      </select>
-    </div>
-
-    <!-- Anime List Display -->
-    <div id="anime-list" class="anime-list">
-      <h2>Watchlist</h2>
-      <!-- Anime cards will be injected here by JavaScript -->
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
